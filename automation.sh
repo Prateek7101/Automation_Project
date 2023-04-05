@@ -57,6 +57,7 @@ s3://${s3_bucket_name}/${myname}-httpd-logs-${timestamp}.tar
 
 #TASK 3
 
+##################################Step 1:Bookkeeping######################################
 if [ -e /var/www/html/inventory.html ]
 then
         echo "Inventory does exists"
@@ -67,6 +68,7 @@ fi
 
 echo "<br>httpd-logs &nbsp;&nbsp;&nbsp;&nbsp; ${timestamp} &nbsp;&nbsp;&nbsp;&nbsp; tar &nbsp;&nbsp;&nbsp;&nbsp; `du -h /tmp/${myname}-httpd-logs-${timestamp}.tar | awk '{print $1}'`" >> /var/www/html/inventory.html
 
+############################Step 2: Cron Job################################################
 if [ -e /etc/cron.d/automation ]
 then
         echo "Cron job exists"
