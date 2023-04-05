@@ -8,3 +8,7 @@ Task 2
 4. Checks if apache2 is enabled or not, then it enables it.
 5. Create a tar archive of apache2 access and error logs
 6. Uploads the compressed file to the AWS s3 bucket
+
+Task 3
+1. Create log entries in inventory.html file.
+2. Create a cron job file that runs automation.sh script
